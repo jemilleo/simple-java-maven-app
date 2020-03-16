@@ -1,5 +1,7 @@
 pipeline {
-    agent 'maven-ocp'
+    agent {
+    	label 'maven-ocp'
+	}
     options {
     	skipStagesAfterUnstable()
     }
